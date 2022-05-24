@@ -304,9 +304,13 @@ footer section {
         justify-content: space-between;
         align-items: center;
     }
+    footer section{
+        width: 94%
+    }
     footer i:hover {
         color: aqua;
     }
+    
 }
 @media (min-width: 1200px ) {
 
