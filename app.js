@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const path = require ("path");
 
-app.listen(3000, () => console.log(`servidor corriendo en el puerto ${PORT}`));
+app.listen(PORT, () => console.log(`servidor corriendo en el puerto ${PORT}`));
 
 app.use(express.static(__dirname + '/public'));
 
