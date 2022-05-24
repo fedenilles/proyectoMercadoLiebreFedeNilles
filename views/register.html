@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a MercadoLiebre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <header>
+        <div class="div-header">
+            <div class="top-bar-imgagen">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLIebre">
+            </div>
+            <div class="barra-de-busqueda">
+                <form action="/" method="post" >
+                    <input type="text" name="buscar" placeholder="Buscar productos, marcas y más.">
+                </form>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div> 
+            <p class="compra"><i class="fas fa-user-alt">Compra en cuotas y sin tarjeta de crédito</i></p>
+
+        </div>
+
+        <nav>
+            <ul class="tienda-list">
+                <li><a href="#"> Ofertas</a></li>
+                <li><a href="#"> Tiendas Oficiales</a></li>
+                <li><a href="#"> Vender</a></li>
+                <li><a href="#"> Ayuda</a></li>
+            </ul>
+
+            <ul class="links-list">
+                <li><a href="/register"> Crea Tu Cuenta</a><i class="fas fa-credit-card"></i></li>
+                <li><a href="/login"> Ingresa</a><i class="fas fa-sign-in-alt"></i></i></li>
+                <li><a href="#"> Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+                
+            </ul>
+
+
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <form action="/" method="get" class="registrer-form">
+            <div class="control-formulario">
+                <input type="text" name="nombre" id="nombre" value="nombre" minlength="5" placeholder="Nombre y apellido" class="control">
+            </div>
+            <div class="control-formulario">
+                <input type="text" name="usuario" id="usuario" value="user" minlength="8" placeholder="Nombre de Usuario" class="control">
+            </div>
+            <div class="control-formulario">
+                <input type="email" name="email" id="email" value="email" placeholder="E-mail" class="control">
+            </div>
+            <div class="control-formulario">
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <input type="date" name="nacimiento" value="birtday" id="nacimiento">
+            </div>
+            <div class="control-formulario">
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" value="Domicilio" class="control">
+            </div>
+            <div class="control-formulario">
+                <label for="perfil">Perfil de Usuario :</label>
+                <label for="vender" >Vender</label>
+                <input type="radio" name="perfil" id="vender" value="Vender">
+                <label for="comprar" >Comprar</label>
+                <input type="radio" name="perfil" id="comprar" value="Comprar">
+            </div>
+            <div class="control-formulario">
+                <label for="categorias">Intereses</label>
+                <br>
+                <input type="checkbox" name="categoria" id="moda" value="moda">
+                <label for="moda">Moda</label>
+                <br>
+                <input type="checkbox" name="categoria" id="electro" value="electro">
+                <label for="electro">Electro</label>
+                <br>
+                <input type="checkbox" name="categoria" id="hogar" value="hogar">
+                <label for="hogar">Hogar</label>
+                <br>
+                <input type="checkbox" name="categoria" id="jugueteria" value="jugueteria">
+                <label for="jugueteria">Jugueteria</label>
+                <br>
+                <input type="checkbox" name="categoria" id="vidaSana" value="vidaSana">
+                <label for="vidaSana"> Vida Sana</label>
+            </div>
+            <div class="control-formulario">
+                <label for="foto-usuario">Foto de Usuario</label>
+                <input type="file" name="foto-usuario" id="foto-usuario" value="user-picture" class="control">
+            </div>
+            <div class="control-formulario">
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" id="pass" value="pass" minlength="3" class="control">
+            </div>
+            <div class="control-formulario">
+                <label for="re-pass">Confirmar Contraseña</label>
+                <input type="password" name="re-pass" id="re-pass" value="re-pass" minlength="3" class="control">
+            </div>
+            <input type="submit" name="Enviar" value="Enviar" class="boton-enviar">
+            <input type="reset" value="reset" name="Reset" class="boton-reset">
+        </form>
+    </main>
+</body>
+</html>

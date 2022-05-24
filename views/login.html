@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a MercadoLiebre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="div-header">
+            <div class="top-bar-imgagen">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLIebre">
+            </div>
+            <div class="barra-de-busqueda">
+                <form action="/" method="post" >
+                    <input type="text" name="buscar" placeholder="Buscar productos, marcas y más.">
+                </form>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div> 
+            <p class="compra"><i class="fas fa-user-alt">Compra en cuotas y sin tarjeta de crédito</i></p>
+
+        </div>
+
+        <nav>
+            <ul class="tienda-list">
+                <li><a href="#"> Ofertas</a></li>
+                <li><a href="#"> Tiendas Oficiales</a></li>
+                <li><a href="#"> Vender</a></li>
+                <li><a href="#"> Ayuda</a></li>
+            </ul>
+
+            <ul class="links-list">
+                <li><a href="/register"> Crea Tu Cuenta</a><i class="fas fa-credit-card"></i></li>
+                <li><a href="/login"> Ingresa</a><i class="fas fa-sign-in-alt"></i></i></li>
+                <li><a href="#"> Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+                
+            </ul>
+
+
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+    <main>
+        <form action="/" method="get" class="login-form">
+            <div class="control-formulario">
+                <label for="usuario">Nombre de Usuari@</label>
+                <input type="text" name="usuario" id="usuario" value="Nombre de usuario" placeholder="Nombre de usuario" class="control" required minlength="5">
+            </div>
+            <div class="control-formulario">
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" id="pass" value="Elegí tu contraseña" minlength="8" placeholder="Elegí tu contraseña" required placeholder="Contraseña" class="control">
+            </div>
+            <input type="submit" name="Enviar" value="Enviar" class="boton-formulario">
+        </form>
+    </main>
+    
+</body>
+</html>
